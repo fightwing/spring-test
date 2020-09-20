@@ -95,7 +95,7 @@ public class RsController {
     return ResponseEntity.ok().build();
   }
 
-  @PostMapping("/rs/buy/{id}")
+  @PostMapping("/buy/{id}")
   public ResponseEntity buy(@PathVariable int id, @RequestBody Trade trade){
     rsService.buy(trade, id);
     return ResponseEntity.ok().build();
